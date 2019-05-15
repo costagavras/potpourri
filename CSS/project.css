@@ -8,10 +8,10 @@ html {
   font-size: 16px; }
 
 #gl {
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
+  width: 659px;
+  height: 500px;
+  left: 10%;
+  top: 10%;
   position: absolute; }
 
 canvas {
