@@ -1,7 +1,10 @@
 html {
   box-sizing: border-box; }
 
-*, *:before, *:after {
+*, *::before, *::after {
   box-sizing: inherit; }
+
+:root {
+  font-size: 16px; }
 
 /*# sourceMappingURL=project.css.map */
