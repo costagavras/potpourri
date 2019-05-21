@@ -8,30 +8,49 @@ html {
 	font-size: 16px;
 }
 
-
-@mixin small-screen() {
-  @media only screen and (min-width: 576px) {
-    @content;
-  }
+.jumbotron {
+  background-color:#2E2D88;
+  color:white;
 }
 
-@mixin average-screen() {
-  @media only screen and (min-width: 768px) {
-    @content;
-  }
+.btn-default {
+  background-color: white;
 }
 
-@mixin large-screen() {
-  @media only screen and (min-width: 992px) {
-    @content;
-  }
-}
+/* Adds borders for tabs */
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
 
-@mixin extralarge-screen() {
-  @media only screen and (min-width: 1200px) {
-    @content;
-  }
-}
+.nav-tabs {
+  margin-bottom: 0; }
 
-@include small-screens {
-}
+
+// @mixin small-screen() {
+//   @media only screen and (min-width: 576px) {
+//     @content;
+//   }
+// }
+//
+// @mixin average-screen() {
+//   @media only screen and (min-width: 768px) {
+//     @content;
+//   }
+// }
+//
+// @mixin large-screen() {
+//   @media only screen and (min-width: 992px) {
+//     @content;
+//   }
+// }
+//
+// @mixin extralarge-screen() {
+//   @media only screen and (min-width: 1200px) {
+//     @content;
+//   }
+// }
+//
+// @include small-screens {
+// }

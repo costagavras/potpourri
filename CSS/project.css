@@ -7,4 +7,21 @@ html {
 :root {
   font-size: 16px; }
 
+.jumbotron {
+  background-color: #2E2D88;
+  color: white; }
+
+.btn-default {
+  background-color: white; }
+
+/* Adds borders for tabs */
+.tab-content {
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 10px; }
+
+.nav-tabs {
+  margin-bottom: 0; }
+
 /*# sourceMappingURL=project.css.map */
