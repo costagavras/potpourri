@@ -8,105 +8,30 @@ html {
 	font-size: 16px;
 }
 
-a {
-	text-decoration: none;
-	color: var(--color-link);
-	outline: none;
+
+@mixin small-screen() {
+  @media only screen and (min-width: 576px) {
+    @content;
+  }
 }
 
-a:hover,
-a:focus {
-	color: var(--color-link-hover);
-	outline: none;
+@mixin average-screen() {
+  @media only screen and (min-width: 768px) {
+    @content;
+  }
 }
 
-.message {
-	background: var(--color-text);
-	color: var(--color-bg);
-	padding: 1rem;
-	position: fixed;
-	top: 0;
-	width: 100%;
-	z-index: 10000;
-	text-align: center;
+@mixin large-screen() {
+  @media only screen and (min-width: 992px) {
+    @content;
+  }
 }
 
-.frame {
-	padding: 3rem 5vw;
-	text-align: center;
-	position: relative;
-	z-index: 1000;
-	height: 100vh;
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
+@mixin extralarge-screen() {
+  @media only screen and (min-width: 1200px) {
+    @content;
+  }
 }
 
-.frame > * {
-	position: relative;
-}
-
-.frame__title {
-	font-size: 1.25rem;
-	margin: 0;
-	font-weight: normal;
-}
-
-.frame__tagline {
-	display: none;
-	margin: 0.5rem 0 2rem;
-}
-
-.frame__links {
-	margin: 1rem 0;
-}
-
-.frame a {
-	text-transform: lowercase;
-}
-
-.frame__links a:not(:last-child),
-.frame__demos a:not(:last-child) {
-	margin-right: 1rem;
-}
-
-.frame__demos {
-	margin: 1rem 0;
-}
-
-.frame__demo--current,
-.frame__demo--current:hover {
-	color: var(--color-text);
-}
-
-.frame__content {
-	line-height: 0.8;
-	pointer-events: none;
-	margin-top: 13vh;
-	font-size: 40vw;
-	font-family: essonnes-display, serif;
-	mix-blend-mode: soft-light;
-	font-weight: normal;
-	text-align: center;
-	color: #c2ba8b;
-}
-
-.demo-2 .frame__content {
-	font-size: 9vw;
-	text-transform: uppercase;
-	font-weight: bold;
-	mix-blend-mode: soft-light;
-	text-align: left;
-	color: #fff;
-	font-family: Futura, "futura-pt", Arial, sans-serif;
-}
-
-.demo-3 .frame__content {
-	color: #24211d;
-}
-
-.demo-4 .frame__content {
-	color: #75c298;
-	mix-blend-mode: overlay;
+@include small-screens {
 }
