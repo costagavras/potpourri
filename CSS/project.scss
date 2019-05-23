@@ -27,6 +27,43 @@ html {
 .nav-tabs {
   margin-bottom: 0; }
 
+  /* Carousel Styling */
+.slide1{
+  background-image: url("../IMG/salami_galore1.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide2{
+  background-image: url("../IMG/salami_galore2.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.slide3{
+  background-image: url("../IMG/tough_choice.jpg");
+  height: 500px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.carousel-caption {
+  h1 {
+    font-size: 5.4em;
+    padding-bottom: .4em;
+  }
+  p {
+    font-size: 2em;
+  }
+}
+
+// .carousel-indicators {
+//   li {
+//     margin: 1em;
+//   }
+// }
 
 // @mixin small-screen() {
 //   @media only screen and (min-width: 576px) {
