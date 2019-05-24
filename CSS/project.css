@@ -7,12 +7,12 @@ html {
 :root {
   font-size: 16px; }
 
+.navbar {
+  margin: 1em; }
+
 .jumbotron {
   background-color: #2E2D88;
   color: white; }
-
-.btn-default {
-  background-color: white; }
 
 /* Adds borders for tabs */
 .tab-content {
@@ -23,6 +23,11 @@ html {
 
 .nav-tabs {
   margin-bottom: 0; }
+
+.navbar-header a img {
+  width: 2em;
+  padding-top: 5px;
+  padding-right: 5px; }
 
 /* Carousel Styling */
 .slide1 {
